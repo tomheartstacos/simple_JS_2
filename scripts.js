@@ -1,4 +1,4 @@
-var repository = [
+var repositoryList = [
   {
     creatureName : 'Metapod',
     creatureHeight : 0.7,
@@ -18,10 +18,4 @@ var repository = [
     creatureTypes : ['Monster', 'Water  1'],
   },
 ];
-
-for ( let i = 0; i < repository.length; i++) {
-  document.write('<h2>' + repository[i].creatureName + '</h2>' + ' Height: ' + repository[i].creatureHeight)
-if (repository[i].creatureHeight >= 2.00) {
-  document.write(' (Wow that\'s big!)' )
-  }
-}
+repositoryList.forEach(element => console.log(element));
