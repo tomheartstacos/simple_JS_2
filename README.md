@@ -1,7 +1,2 @@
 # simple_JS_2
-# This is my first pass at this exercise based on these instructions: 
-# 1.	Open the “scripts.js” file of your project and remove all existing code. You're going to set up your application from scratch. As you work on your project, don’t forget to regularly commit your changes on GitHub with meaningful commit messages. (When you use a project from your portfolio for a job application, the recruiter will most likely take a look at the commit history of your project. They'll want to see that you know how to use Git and that you can write meaningful commit messages, as they're crucial when working in teams and on large projects.)
-2.	Create a new variable called pokemonList and assign to it a blank array. This array contains Pokémon data to display in your application.
-3.	Now, add several objects to the array. Each object represents one Pokémon and needs to have the same keys to avoid errors. Add at least the following three keys to each Pokémon object and make up a value for each of them: name (make this a string, e.g., "Bulbasaur"), height (this will be a number, e.g., 7) and types (make this an array of strings, e.g., ['grass', 'poison']). You can use Pokedex.org as a reference. Create at least three Pokémon objects in your pokemonList array.
-4.	Save the changes, then commit and push them to your GitHub repository.
-5.	Submit the link to your GitHub repository here. Feel free to share additional thoughts or ask questions on your submissions page.
+# Ex 1.5 first attempt with Iffies 
