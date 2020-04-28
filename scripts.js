@@ -18,4 +18,9 @@ var repositoryList = [
     creatureTypes : ['Monster', 'Water  1'],
   },
 ];
-repositoryList.forEach(element => console.log(element));
+var pokemonRepository = (function () {
+  var repositoryList = [];
+}
+)();
+
+pokemonRepository.forEach(element => console.log(element));
