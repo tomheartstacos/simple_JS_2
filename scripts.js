@@ -12,6 +12,19 @@ function add(pokemon) {
 repositoryList.push(pokemon);
 }
 
+function addListItem(pokemon = {}) {
+  var pokemonRepository = document.querySelector('.pokemon-list');
+  var $listItem = document.createElement('li');
+  var button = document.createElement('button');
+  button.innerText = creatureName;
+  button.classList.add('my-class');
+  $listItem.appendChild(button);
+  pokemonList.appendChild($listItem);
+  button.addEventListener('click', function(event) {
+    showDetails(pokemon);
+  });//
+}
+
 return {
 add: add,
 getAll: getAll
