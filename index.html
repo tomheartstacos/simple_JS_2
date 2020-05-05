@@ -10,10 +10,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <div>
-    <ul class='pokemonList'></ul> <!-- creates an unordered list with a class to make it selectable in JS -->
-  </div>
-    <script src="promise-polyfill.js"></script>
-    <script src="fetch-polyfill.js"></script>
-    <script src="scripts.js"></script>
+    </div>
+  <section>
+    <header class="header-body">
+      <h1 class="header-title">Pokemon List</h1>
+    </header>
+
+    <ul class="pokemon-list"></ul>
+
+    <h1 class="pokemon-name"></h1>
+
+      <button id='show-modal'>
+      Show modal
+    </button>
+    <div id='modal-container'></div>
+  </section>
+
+  <script src="promise-polyfill.js"></script>
+  <script src="fetch.umd.js"></script>
+  <script src="reg.validation.js"> </script>
+  <script src="scripts_tv.js"></script>
 </body>
 </html>

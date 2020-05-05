@@ -1,86 +1,56 @@
-/* Site Colors
-background: #161A19
-font color: #DEFFFB
-header: #20FFE3
-button: #20FFE3
-link: #F5CDB5
-visited link: #e0b354
-active link: #F5DD73
-
-*/
-
 body {
-  background-color: #defffb;
-  color: #defffb;
-  font-family: 'Roboto Condensed', sans-serif;
+  /* font-family = importet font (Head from html documents); sans-serif = fallback webfont found on the users computer */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  font-weight: 300;
+
+  /* Set the font size to 16px */
   line-height: 1.6;
+
+  /* Set the line-height to 1.6 */
+  display: flex;
+  min-height: 100vh;
+  margin: 0.5rem 1rem;
+  flex-direction: column;
 }
 
+/* Box-sizing is applied to all elements. The box-sizing property allows us to include the padding and border in an element's total width and height.
+ Several elements can have the same size now. */
+* {
+  box-sizing: border-box;
+}
+
+/* Define the look from heading h1 */
 h1 {
-  color: #20ffe3;
   font-size: 30px;
-  font-weight: 700;
-  margin: 0;
+  font-weight: 900;
+  color: #0b610b;
+}
+
+/* Area within body, but over footer --> main-area; Without this, the footer is not placed at the end of the site */
+main {
+  flex: 1;
+}
+
+/* Place the footer at the end and middle from the website */
+.flex-container {
+  position: relative;
+  bottom: 0;
   text-align: center;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-a {
-  color: #f5cdb5;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #e0b354;
-}
-
-a:hover,
-a:focus {
-  color: #20ffe3;
-}
-
-a:active {
-  color: #f5dd73;
-}
-
-button,
-.button {
-  background-color: #fff;
-  border: 2px solid;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
+/* Give the button a custom button style to overwrite default styling. The button will be accessed with 'button' in JS */
+button {
+  background: #F3F781;
+  color: #585858;
+  margin-bottom: 7px;
   width: 240px;
   height: 50px;
-  color: black;
-  font-family: inherit;
-  padding: 10px;
-  text-decoration: none;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  cursor: pointer;
-  opacity: 0.5;
-  transition: all 0.25s ease-in-out;
-}
-
-table {
-  width: 50%;
-}
-
-td:nth-child(2) {
-  text-align: center;
-}
-
-td:last-child {
-  text-align: right;
-}
-
-input {
-  display: inline-block;
+  border: 2px solid;
+  font-size: 20px;
+  border-radius: 4px;
 }
 
 /* Give the unordered list a custom style. The list will be accessed with 'ul' in JS & HTML */
@@ -93,58 +63,15 @@ ul {
   box-sizing: border-box;
 }
 
-/* Header */
-
-.page-header {
+/* Give the single list-item a custom style. The list-item will be accessed with 'li' in JS */
+li {
   display: flex;
-  padding: 20px;
-  width: 100%;
-  flex: 0 1 200px;
-  margin-top: 10px;
-  margin-bottom: 5%;
+  align-items: center;
+  justify-content: center;
 }
 
-.page-header__item {
-  width: 250px;
-}
-
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
-
-/* Profile Section */
-
-.header__left {
-  text-align: left;
-}
-
-.profile {
-  display: flex;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-bottom: 10%;
-}
-
-.profile__portrait {
-  border-radius: 50%;
-  float: left;
-  margin-right: 40px;
-  width: 250px;
-}
-
-.profile-copy {
-  align-self: center;
-}
-
-/* About Page */
-
-.about {
-  display: block;
-  text-align: center;
-}
-
-.experience-table {
-  margin: 0 auto;
-  margin-bottom: 5%;
+/* Use a custom style when the mouse hovers over the button or presses the button */
+button:hover, button:focus {
+  cursor: pointer;
+  opacity: 0.5;
 }
